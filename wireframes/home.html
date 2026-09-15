@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookReview - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="home.html" aria-label="BookReview home">BookReview</a>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a class="nav-link is-active" href="home.html">Home</a>
+      <div class="genre-menu">
+        <button class="nav-link genre-trigger" type="button" aria-haspopup="true">
+          Genre
+        </button>
+
+        <div class="genre-panel" aria-label="Genre menu">
+          <div>
+            <a href="book-listing.html">Fiction</a>
+            <a href="book-listing.html">Mystery</a>
+            <a href="book-listing.html">Romance</a>
+            <a href="book-listing.html">Biography</a>
+          </div>
+          <div>
+            <a href="book-listing.html">Fantasy</a>
+            <a href="book-listing.html">Science fiction</a>
+            <a href="book-listing.html">History</a>
+            <a href="book-listing.html">Self-help</a>
+          </div>
+          <div>
+            <a href="book-listing.html">Thriller</a>
+            <a href="book-listing.html">Young adult</a>
+            <a href="book-listing.html">Classics</a>
+            <a href="book-listing.html">Comics</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="genre-menu">
+        <button class="nav-link genre-trigger" type="button" aria-haspopup="true">Country</button>
+        <div class="genre-panel country-panel" aria-label="Country menu">
+          <div>
+            <a href="book-listing.html">United States</a>
+            <a href="book-listing.html">United Kingdom</a>
+            <a href="book-listing.html">Japan</a>
+            <a href="book-listing.html">South Korea</a>
+          </div>
+          <div>
+            <a href="book-listing.html">Vietnam</a>
+            <a href="book-listing.html">France</a>
+            <a href="book-listing.html">Germany</a>
+            <a href="book-listing.html">China</a>
+          </div>
+        </div>
+      </div>
+
+      <a class="nav-link" href="ranking.html">Ranking</a>
+      <a class="nav-link" href="#reviews">Reviews</a>
+    </nav>
+
+    <form class="search-box" role="search">
+      <span class="search-icon" aria-hidden="true">⌕</span>
+      <input type="search" placeholder="Search books, authors, reviews" aria-label="Search books" />
+    </form>
+
+    <div class="profile-menu">
+      <button class="avatar" type="button" aria-label="Open account menu">H</button>
+      <div class="profile-panel">
+        <a href="#">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow">Featured this week</span>
+        <h1 id="hero-title">The Silent Library</h1>
+        <p class="hero-subtitle">A mystery pick loved by readers this week</p>
+        <p class="hero-meta">4.8 rating · 12.4k reviews · Mystery · Trending now</p>
+        <p class="hero-description">
+          Discover reader reactions, compare ratings, and jump into spoiler-free reviews before choosing your next book.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="book-detail.html">View details</a>
+          <button class="btn btn-secondary" type="button">Add to wishlist</button>
+        </div>
+      </div>
+
+      <aside class="hero-stats" aria-label="Featured book stats">
+        <div class="stat-card">
+          <strong>#1</strong>
+          <span>Trending</span>
+        </div>
+        <div class="stat-card">
+          <strong>4.8</strong>
+          <span>Reader score</span>
+        </div>
+      </aside>
+
+      <a class="featured-cover cover cover-red" href="book-detail.html" aria-label="Open The Silent Library">
+        <span class="cover-kicker">The</span>
+        <span class="cover-title">Silent<br />Library</span>
+        <span class="cover-line"></span>
+        <span class="cover-meta">Mystery novel</span>
+      </a>
+    </section>
+
+    <section class="book-row" aria-labelledby="trending-title">
+      <div class="row-header">
+        <h2 id="trending-title">Trending books</h2>
+        <button class="row-control" type="button" aria-label="Next trending books">›</button>
+      </div>
+
+      <div class="carousel">
+        <a class="book-card" href="book-detail.html">
+          <span class="cover cover-blue"><span>Atomic<br />Habits</span></span>
+          <strong>Atomic Habits</strong>
+          <small>4.7 · Self-help</small>
+        </a>
+        <a class="book-card" href="book-detail.html">
+          <span class="cover cover-green"><span>Fourth<br />Wing</span></span>
+          <strong>Fourth Wing</strong>
+          <small>4.6 · Fantasy</small>
+        </a>
+        <a class="book-card" href="book-detail.html">
+          <span class="cover cover-purple"><span>Project<br />Hail Mary</span></span>
+          <strong>Project Hail Mary</strong>
+          <small>4.8 · Sci-fi</small>
+        </a>
+        <a class="book-card" href="book-detail.html">
+          <span class="cover cover-orange"><span>Educated</span></span>
+          <strong>Educated</strong>
+          <small>4.5 · Memoir</small>
+        </a>
+        <a class="book-card" href="book-detail.html">
+          <span class="cover cover-red"><span>The<br />Maid</span></span>
+          <strong>The Maid</strong>
+          <small>4.3 · Mystery</small>
+        </a>
+        <a class="book-card" href="book-detail.html">
+          <span class="cover cover-teal"><span>Tomorrow<br />x3</span></span>
+          <strong>Tomorrow x3</strong>
+          <small>4.4 · Fiction</small>
+        </a>
+      </div>
+    </section>
+
+    <section class="book-row" aria-labelledby="rated-title">
+      <div class="row-header">
+        <h2 id="rated-title">Top rated this week</h2>
+        <button class="row-control" type="button" aria-label="Next top rated books">›</button>
+      </div>
+
+      <div class="wide-carousel">
+        <a class="rated-card" href="book-detail.html">
+          <span class="mini-cover cover-purple"></span>
+          <span>
+            <strong>Lessons in Chemistry</strong>
+            <small>4.9 average rating</small>
+            <em>32k reviews</em>
+          </span>
+        </a>
+        <a class="rated-card" href="book-detail.html">
+          <span class="mini-cover cover-green"></span>
+          <span>
+            <strong>Dune</strong>
+            <small>4.8 average rating</small>
+            <em>88k reviews</em>
+          </span>
+        </a>
+        <a class="rated-card" href="book-detail.html">
+          <span class="mini-cover cover-blue"></span>
+          <span>
+            <strong>The Midnight Library</strong>
+            <small>4.7 average rating</small>
+            <em>51k reviews</em>
+          </span>
+        </a>
+        <a class="rated-card" href="book-detail.html">
+          <span class="mini-cover cover-orange"></span>
+          <span>
+            <strong>Circe</strong>
+            <small>4.7 average rating</small>
+            <em>45k reviews</em>
+          </span>
+        </a>
+        <a class="rated-card" href="book-detail.html">
+          <span class="mini-cover cover-red"></span>
+          <span>
+            <strong>Dark Matter</strong>
+            <small>4.6 average rating</small>
+            <em>28k reviews</em>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="book-row" id="reviews" aria-labelledby="reviews-title">
+      <div class="row-header">
+        <h2 id="reviews-title">Fresh reviews</h2>
+      </div>
+
+      <div class="review-grid">
+        <article class="review-card">
+          <h3>“Fast-paced and atmospheric.”</h3>
+          <p>The Silent Library keeps its reveal sharp without losing the emotional thread.</p>
+          <small>HuyVo · Mystery · 5.0</small>
+        </article>
+        <article class="review-card">
+          <h3>“Easy to keep browsing.”</h3>
+          <p>The genre rows make discovery feel quick without forcing users into filters too early.</p>
+          <small>Reader Review · Fiction · 4.5</small>
+        </article>
+        <article class="review-card">
+          <h3>“Ranking feels useful.”</h3>
+          <p>Top-rated books surface quickly, while still leaving room for personal taste.</p>
+          <small>Book Club · Ranking · 4.8</small>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
