@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookReview - Ranking</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="home.html" aria-label="BookReview home">BookReview</a>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a class="nav-link" href="home.html">Home</a>
+      <div class="genre-menu">
+        <button class="nav-link genre-trigger" type="button" aria-haspopup="true">
+          Genre
+        </button>
+        <div class="genre-panel" aria-label="Genre menu">
+          <div>
+            <a href="book-listing.html">Fiction</a>
+            <a href="book-listing.html">Mystery</a>
+            <a href="book-listing.html">Romance</a>
+            <a href="book-listing.html">Biography</a>
+          </div>
+          <div>
+            <a href="book-listing.html">Fantasy</a>
+            <a href="book-listing.html">Science fiction</a>
+            <a href="book-listing.html">History</a>
+            <a href="book-listing.html">Self-help</a>
+          </div>
+          <div>
+            <a href="book-listing.html">Thriller</a>
+            <a href="book-listing.html">Young adult</a>
+            <a href="book-listing.html">Classics</a>
+            <a href="book-listing.html">Comics</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="genre-menu">
+        <button class="nav-link genre-trigger" type="button" aria-haspopup="true">Country</button>
+        <div class="genre-panel country-panel" aria-label="Country menu">
+          <div>
+            <a href="book-listing.html">United States</a>
+            <a href="book-listing.html">United Kingdom</a>
+            <a href="book-listing.html">Japan</a>
+            <a href="book-listing.html">South Korea</a>
+          </div>
+          <div>
+            <a href="book-listing.html">Vietnam</a>
+            <a href="book-listing.html">France</a>
+            <a href="book-listing.html">Germany</a>
+            <a href="book-listing.html">China</a>
+          </div>
+        </div>
+      </div>
+
+      <a class="nav-link is-active" href="ranking.html">Ranking</a>
+      <a class="nav-link" href="home.html#reviews">Reviews</a>
+    </nav>
+
+    <form class="search-box" role="search">
+      <span class="search-icon" aria-hidden="true">⌕</span>
+      <input type="search" placeholder="Search books, authors, reviews" aria-label="Search books" />
+    </form>
+
+    <div class="profile-menu">
+      <button class="avatar" type="button" aria-label="Open account menu">H</button>
+      <div class="profile-panel">
+        <a href="#">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero ranking-hero">
+      <span class="eyebrow">Community ranking</span>
+      <h1>Top books right now</h1>
+      <p>Track what readers are rating, reviewing, and recommending across genres.</p>
+    </section>
+
+    <section class="ranking-shell" aria-label="Book rankings">
+      <div class="ranking-tabs">
+        <button class="filter-chip is-selected" type="button">This week</button>
+        <button class="filter-chip" type="button">This month</button>
+        <button class="filter-chip" type="button">All time</button>
+        <button class="filter-chip" type="button">Mystery</button>
+      </div>
+
+      <div class="ranking-list">
+        <a class="rank-card is-featured" href="book-detail.html">
+          <span class="rank-number">1</span>
+          <span class="cover cover-red"><span>The<br />Silent Library</span></span>
+          <span class="rank-info">
+            <strong>The Silent Library</strong>
+            <small>Mystery · 4.8 rating · 12.4k reviews</small>
+            <em>Fastest climbing title this week</em>
+          </span>
+          <span class="rank-score">98</span>
+        </a>
+        <a class="rank-card" href="book-detail.html">
+          <span class="rank-number">2</span>
+          <span class="cover cover-purple"><span>Project<br />Hail Mary</span></span>
+          <span class="rank-info">
+            <strong>Project Hail Mary</strong>
+            <small>Sci-fi · 4.8 rating · 64k reviews</small>
+            <em>Reader favorite for science fiction</em>
+          </span>
+          <span class="rank-score">96</span>
+        </a>
+        <a class="rank-card" href="book-detail.html">
+          <span class="rank-number">3</span>
+          <span class="cover cover-green"><span>Fourth<br />Wing</span></span>
+          <span class="rank-info">
+            <strong>Fourth Wing</strong>
+            <small>Fantasy · 4.6 rating · 73k reviews</small>
+            <em>Most discussed in fantasy rows</em>
+          </span>
+          <span class="rank-score">93</span>
+        </a>
+        <a class="rank-card" href="book-detail.html">
+          <span class="rank-number">4</span>
+          <span class="cover cover-orange"><span>Lessons in<br />Chemistry</span></span>
+          <span class="rank-info">
+            <strong>Lessons in Chemistry</strong>
+            <small>Fiction · 4.9 rating · 32k reviews</small>
+            <em>Best rating momentum</em>
+          </span>
+          <span class="rank-score">91</span>
+        </a>
+        <a class="rank-card" href="book-detail.html">
+          <span class="rank-number">5</span>
+          <span class="cover cover-blue"><span>Atomic<br />Habits</span></span>
+          <span class="rank-info">
+            <strong>Atomic Habits</strong>
+            <small>Self-help · 4.7 rating · 110k reviews</small>
+            <em>Most saved non-fiction pick</em>
+          </span>
+          <span class="rank-score">89</span>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookReview - The Silent Library</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="home.html" aria-label="BookReview home">BookReview</a>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a class="nav-link" href="home.html">Home</a>
+      <div class="genre-menu">
+        <button class="nav-link genre-trigger" type="button" aria-haspopup="true">
+          Genre
+        </button>
+        <div class="genre-panel" aria-label="Genre menu">
+          <div>
+            <a href="book-listing.html">Fiction</a>
+            <a href="book-listing.html">Mystery</a>
+            <a href="book-listing.html">Romance</a>
+            <a href="book-listing.html">Biography</a>
+          </div>
+          <div>
+            <a href="book-listing.html">Fantasy</a>
+            <a href="book-listing.html">Science fiction</a>
+            <a href="book-listing.html">History</a>
+            <a href="book-listing.html">Self-help</a>
+          </div>
+          <div>
+            <a href="book-listing.html">Thriller</a>
+            <a href="book-listing.html">Young adult</a>
+            <a href="book-listing.html">Classics</a>
+            <a href="book-listing.html">Comics</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="genre-menu">
+        <button class="nav-link genre-trigger" type="button" aria-haspopup="true">Country</button>
+        <div class="genre-panel country-panel" aria-label="Country menu">
+          <div>
+            <a href="book-listing.html">United States</a>
+            <a href="book-listing.html">United Kingdom</a>
+            <a href="book-listing.html">Japan</a>
+            <a href="book-listing.html">South Korea</a>
+          </div>
+          <div>
+            <a href="book-listing.html">Vietnam</a>
+            <a href="book-listing.html">France</a>
+            <a href="book-listing.html">Germany</a>
+            <a href="book-listing.html">China</a>
+          </div>
+        </div>
+      </div>
+
+      <a class="nav-link" href="ranking.html">Ranking</a>
+      <a class="nav-link" href="home.html#reviews">Reviews</a>
+    </nav>
+
+    <form class="search-box" role="search">
+      <span class="search-icon" aria-hidden="true">⌕</span>
+      <input type="search" placeholder="Search books, authors, reviews" aria-label="Search books" />
+    </form>
+
+    <div class="profile-menu">
+      <button class="avatar" type="button" aria-label="Open account menu">H</button>
+      <div class="profile-panel">
+        <a href="#">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="detail-hero">
+      <a class="featured-cover cover cover-red" href="#" aria-label="The Silent Library cover">
+        <span class="cover-kicker">The</span>
+        <span class="cover-title">Silent<br />Library</span>
+        <span class="cover-line"></span>
+        <span class="cover-meta">Mystery novel</span>
+      </a>
+
+      <div class="detail-copy">
+        <span class="eyebrow">Mystery · Trending now</span>
+        <h1>The Silent Library</h1>
+        <p class="detail-author">by A. Morgan Vale</p>
+        <div class="rating-row" aria-label="Book rating">
+          <strong>4.8</strong>
+          <span>★★★★★</span>
+          <small>12.4k reviews</small>
+        </div>
+        <p class="detail-description">
+          A locked-room mystery set inside a private archive where every clue is hidden in the margins. Readers praise its quiet atmosphere, sharp reveal, and unusually emotional final act.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" type="button">Write review</button>
+          <button class="btn btn-secondary" type="button">Add to wishlist</button>
+        </div>
+      </div>
+
+      <aside class="detail-panel">
+        <h2>Book info</h2>
+        <dl>
+          <div><dt>Published</dt><dd>2026</dd></div>
+          <div><dt>Pages</dt><dd>384</dd></div>
+          <div><dt>Language</dt><dd>English</dd></div>
+          <div><dt>Genre</dt><dd>Mystery</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="detail-grid">
+      <article class="content-card">
+        <h2>Description</h2>
+        <p>
+          When a rare-book curator disappears during a storm, four readers are trapped overnight in a silent library with only annotated books as evidence. Each chapter reveals a new margin note, a new suspect, and a stronger reason not to trust the official story.
+        </p>
+      </article>
+
+      <article class="content-card">
+        <h2>Rating breakdown</h2>
+        <div class="rating-bars">
+          <span>5 stars</span><strong style="--bar: 84%"></strong><em>84%</em>
+          <span>4 stars</span><strong style="--bar: 12%"></strong><em>12%</em>
+          <span>3 stars</span><strong style="--bar: 3%"></strong><em>3%</em>
+          <span>2 stars</span><strong style="--bar: 1%"></strong><em>1%</em>
+        </div>
+      </article>
+    </section>
+
+    <section class="book-row">
+      <div class="row-header">
+        <h2>Reader reviews</h2>
+      </div>
+
+      <div class="review-grid">
+        <article class="review-card">
+          <h3>“A polished mystery with a real pulse.”</h3>
+          <p>The clues are fair, the setting is memorable, and the last third finally pays off the slow burn.</p>
+          <small>HuyVo · 5.0</small>
+        </article>
+        <article class="review-card">
+          <h3>“Quiet, but never dull.”</h3>
+          <p>I liked that the book trusts the reader. The annotations are a clever way to reveal motive.</p>
+          <small>Teddy · 4.5</small>
+        </article>
+        <article class="review-card">
+          <h3>“Best read on a rainy night.”</h3>
+          <p>The atmosphere carries the whole experience. Not flashy, but very satisfying.</p>
+          <small>Book Club · 4.8</small>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
